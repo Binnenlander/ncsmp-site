@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NCSMP – Home</title>
+
+<style>
+body{
+  margin:0;
+  background:#0b0f14;
+  color:#fff;
+  font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(11,15,20,.85);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.15);
+}
+.navbar-inner{
+  max-width:1200px;
+  margin:auto;
+  padding:14px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  margin-left:14px;
+  padding:6px 16px;
+  border-radius:999px;
+  transition:.25s;
+}
+.nav-links a:hover{ background:rgba(255,255,255,.12); }
+.nav-links a.active{
+  background:linear-gradient(135deg,#7dd3fc66,#a78bfa66);
+  box-shadow:0 0 16px rgba(125,211,252,.7);
+  font-weight:700;
+}
+
+/* HERO */
+.hero{
+  max-width:1200px;
+  margin:60px auto 40px;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:40px;
+}
+.hero-box{
+  background:linear-gradient(135deg,#7dd3fc33,#a78bfa33);
+  border-radius:26px;
+  padding:48px;
+  box-shadow:0 0 40px rgba(125,211,252,.25);
+}
+.hero h1{font-size:46px;margin:0}
+.hero p{color:#ddd;font-size:18px;line-height:1.7}
+
+.hero-actions{
+  margin-top:22px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+.hero-actions a{
+  text-decoration:none;
+  font-weight:900;
+  padding:12px 18px;
+  border-radius:999px;
+  transition:.25s;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+.btn-main{
+  background:linear-gradient(135deg,#7dd3fc,#a78bfa);
+  color:#111;
+  box-shadow:0 0 24px rgba(125,211,252,.25);
+}
+.btn-main:hover{transform:translateY(-2px)}
+.btn-ghost{
+  border:1px solid rgba(255,255,255,.25);
+  color:#fff;
+}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+
+/* INFO */
+.info{
+  max-width:1200px;
+  margin:0 auto 60px;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:26px;
+}
+.info-card{
+  background:#0e0e0e;
+  border-radius:22px;
+  padding:26px;
+  box-shadow:0 0 35px rgba(0,0,0,.55);
+}
+.info-card h3{margin-top:0}
+.info-card p{color:#ccc;line-height:1.6}
+
+/* TIMELINE */
+.timeline-wrapper{
+  max-width:1200px;
+  margin:60px auto 80px;
+  padding:40px;
+  background:linear-gradient(180deg,#0e141c,#0b0f14);
+  border-radius:26px;
+  box-shadow:0 0 40px rgba(0,0,0,.7);
+}
+.timeline-title{
+  text-align:center;
+  font-size:26px;
+  font-weight:900;
+}
+.timeline-sub{
+  text-align:center;
+  color:#ccc;
+  margin:8px 0 40px;
+  line-height:1.6;
+}
+
+/* EVENTS (boven gele balk) */
+.events{
+  position:relative;
+  height:120px;
+}
+.event{
+  position:absolute;
+  transform:translateX(-50%);
+  bottom:0;
+  text-align:center;
+  font-weight:900;
+  font-size:14px;
+  width:160px;
+  pointer-events:none;
+}
+.event .line{
+  width:2px;
+  height:22px;
+  background:#ffd84d;
+  margin:6px auto 0;
+}
+
+/* MAIN BAR */
+.main-bar{
+  position:relative;
+  height:36px;
+  border-radius:10px;
+  background:linear-gradient(#ffb300,#d88900);
+  box-shadow:0 0 18px rgba(255,180,0,.8);
+  display:flex;
+  align-items:center;
+  padding:0 18px;
+  font-size:22px;
+  font-weight:900;
+}
+.end-block{
+  position:absolute;
+  right:-22px;
+  top:-4px;
+  width:44px;
+  height:44px;
+  background:linear-gradient(#ffe27a,#ffbf00);
+  border-radius:10px;
+  box-shadow:0 0 18px rgba(255,180,0,.45);
+}
+
+/* LOST SHORES */
+.lost-wrapper{margin-top:28px}
+.lost-bar{
+  margin-left:42%;
+  width:38%;
+  height:32px;
+  border-radius:10px;
+  background:linear-gradient(#c40000,#8b0000);
+  box-shadow:0 0 18px rgba(255,0,0,.55);
+  display:flex;
+  align-items:center;
+  padding:0 16px;
+  font-size:20px;
+  font-weight:900;
+  position:relative;
+}
+
+/* Finale block (25% kleiner dan jouw eerdere grotere varianten) */
+.lost-final-block{
+  position:absolute;
+  right:-12px;
+  top:2px;
+  width:24px;      /* <- pas hier breedte aan */
+  height:28px;     /* <- pas hier hoogte aan */
+  border-radius:7px;
+  background:linear-gradient(#ff7a7a,#ff1e1e);
+  box-shadow:0 0 14px rgba(255,50,50,.85);
+  border:1px solid rgba(255,255,255,.25);
+}
+
+/* LOST EVENTS (onder rode balk) */
+.lost-events{
+  position:relative;
+  height:110px;
+  margin-top:10px;
+}
+.lost-event{
+  position:absolute;
+  transform:translateX(-50%);
+  text-align:center;
+  font-weight:900;
+  font-size:14px;
+  width:180px;
+}
+.lost-event .line{
+  width:2px;
+  height:22px;
+  background:#ff5c5c;
+  margin:0 auto 6px;
+}
+
+/* EXTRA SECTIES (home uitbreiden zonder te slopen) */
+.section{
+  max-width:1200px;
+  margin:0 auto 80px;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:26px;
+}
+.panel{
+  background:#0e0e0e;
+  border-radius:22px;
+  padding:26px;
+  box-shadow:0 0 35px rgba(0,0,0,.55);
+}
+.panel h2{
+  margin:0 0 10px;
+  font-size:24px;
+}
+.panel p, .panel li{
+  color:#ccc;
+  line-height:1.7;
+}
+.panel ul{margin:10px 0 0; padding-left:18px}
+
+/* CTA */
+.cta{
+  max-width:1200px;
+  margin:0 auto 80px;
+  padding:0 20px;
+}
+.cta-box{
+  background:linear-gradient(135deg,#7dd3fc22,#a78bfa22);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:26px;
+  padding:34px;
+  text-align:center;
+  box-shadow:0 0 50px rgba(125,211,252,.12);
+}
+.cta-box h2{margin:0 0 8px; font-size:30px}
+.cta-box p{color:#ccc; line-height:1.7; margin:0}
+.cta-actions{
+  margin-top:18px;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+}
+.cta-actions a{
+  padding:12px 18px;
+  border-radius:999px;
+  font-weight:900;
+  text-decoration:none;
+}
+.cta-primary{
+  background:linear-gradient(135deg,#7dd3fc,#a78bfa);
+  color:#111;
+}
+.cta-ghost{
+  border:1px solid rgba(255,255,255,.25);
+  color:#fff;
+}
+.cta-ghost:hover{background:rgba(255,255,255,.08)}
+
+/* FOOTER */
+footer{
+  border-top:1px solid rgba(255,255,255,.15);
+  text-align:center;
+  padding:28px;
+  color:#888;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .section{grid-template-columns:1fr}
+  .event{width:140px}
+  .lost-event{width:160px}
+}
+@media(max-width:520px){
+  .hero h1{font-size:38px}
+  .timeline-wrapper{padding:26px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="navbar-inner">
+    <strong>NCSMP</strong>
+    <div class="nav-links">
+      <a href="home.html" class="active">Home</a>
+      <a href="gebieden.html">Gebieden</a>
+      <a href="regels.html">Regels</a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-box">
+    <h1>NCSMP – Seizoen 1</h1>
+    <p>
+      Hardcore SMP waar keuzes tellen.<br>
+      Geen respawns. Geen tweede kansen.<br>
+      Alleen strategie, spanning en verhaal.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn-main" href="gebieden.html">🗺️ Gebieden</a>
+      <a class="btn-ghost" href="regels.html">📜 Regels</a>
+      <a class="btn-ghost" href="https://discord.com/invite/NCSMP" target="_blank" rel="noopener">💬 Discord</a>
+    </div>
+  </div>
+
+  <p style="color:#bbb;font-size:16px;line-height:1.7">
+    In NCSMP bepaalt elke actie de toekomst.
+    Allianties ontstaan, verraders vallen door de mand
+    en de wereld verandert door jouw keuzes.
+  </p>
+</div>
+
+<!-- INFO -->
+<div class="info">
+  <div class="info-card">
+    <h3>⚔️ Hardcore</h3>
+    <p>Doodgaan betekent verbanning naar Lost Shores.</p>
+  </div>
+  <div class="info-card">
+    <h3>🌍 Gebieden</h3>
+    <p>Noord, Oost, Zuid en West met eigen spelers en dynamiek.</p>
+  </div>
+  <div class="info-card">
+    <h3>📖 Lore</h3>
+    <p>Verhaalgedreven events bepalen het verloop van het seizoen.</p>
+  </div>
+  <div class="info-card">
+    <h3>🛡️ Fair Play</h3>
+    <p>Geen cheats, exploits of oneerlijke voordelen.</p>
+  </div>
+</div>
+
+<!-- TIMELINE -->
+<div class="timeline-wrapper">
+  <div class="timeline-title">📅 Seizoensplanning</div>
+  <div class="timeline-sub">
+    Server start <b>21 december</b> om <b>14:00</b><br>
+    25 &amp; 26 december: <b>volledig gesloten</b> (Kerst)
+  </div>
+
+  <!-- Events boven de gele balk -->
+  <div class="events">
+    <div class="event" style="left:0%">
+      21 dec<br>Start seizoen 🌍
+      <div class="line"></div>
+    </div>
+
+    <div class="event" style="left:20%">
+      25–26 dec<br>Kerst gesloten 🎄
+      <div class="line"></div>
+    </div>
+
+    <div class="event" style="left:35%">
+      27 dec<br>Nether open 🔥
+      <div class="line"></div>
+    </div>
+
+    <div class="event" style="left:50%">
+      30 dec<br>Ijsmuur smelt ❄️
+      <div class="line"></div>
+    </div>
+
+    <div class="event" style="left:72%">
+      10 jan<br>End open 🌀
+      <div class="line"></div>
+    </div>
+
+    <div class="event" style="left:100%">
+      17 jan<br>Grote SMP Finale 🏆
+      <div class="line"></div>
+    </div>
+  </div>
+
+  <div class="main-bar">
+    Hardcore SMP – Seizoen 1
+    <div class="end-block"></div>
+  </div>
+
+  <!-- LOST SHORES (rode balk) -->
+  <div class="lost-wrapper">
+    <div class="lost-bar">
+      Lost Shores
+      <div class="lost-final-block" title="12 januari – Finale Lost Shores ❤️"></div>
+    </div>
+
+    <!-- Lost Shores events onder de rode balk -->
+    <div class="lost-events">
+      <div class="lost-event" style="left:42%">
+        <div class="line"></div>
+        5 jan<br>Start Lost Shores 💀
+      </div>
+
+      <div class="lost-event" style="left:80%">
+        <div class="line"></div>
+        12 jan<br>Finale Lost Shores ❤️
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EXTRA UITBREIDING (zonder je layout te breken) -->
+<div class="section">
+  <div class="panel">
+    <h2>🌟 Waar draait NCSMP om?</h2>
+    <p>
+      NCSMP is geen standaard SMP. Alles draait om spanning, keuzes en gevolgen.
+      PvP is toegestaan, maar nooit doelloos — het moet passen binnen het verhaal.
+    </p>
+    <ul>
+      <li>Geen respawns: dood = Lost Shores</li>
+      <li>Gebieden bepalen politiek en conflicten</li>
+      <li>Events sturen het verhaal vooruit</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h2>⚖️ Speelstijl</h2>
+    <p>
+      Iedereen speelt met dezelfde kansen. Cheats en exploits zijn zero tolerance.
+      Je wint door strategie, teamwork en keuzes — niet door onzin.
+    </p>
+    <ul>
+      <li>Fair-play boven alles</li>
+      <li>Respecteer de regels & lore</li>
+      <li>Spanning en betekenisvolle PvP</li>
+    </ul>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+  <div class="cta-box">
+    <h2>Meedoen aan Seizoen 1?</h2>
+    <p>Join Discord voor updates, aankondigingen en de community.</p>
+    <div class="cta-actions">
+      <a class="cta-primary" href="https://discord.com/invite/NCSMP" target="_blank" rel="noopener">💬 Join Discord</a>
+      <a class="cta-ghost" href="regels.html">📜 Regels</a>
+      <a class="cta-ghost" href="gebieden.html">🗺️ Gebieden</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © NCSMP Seizoen 1 — Speel eerlijk. Overleef. Respecteer de ijsmuur.
+</footer>
+
+</body>
+</html>

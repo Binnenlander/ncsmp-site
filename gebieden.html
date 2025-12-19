@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NCSMP – Teamverdeling</title>
+
+<style>
+body{
+  margin:0;
+  background:#0b0f14;
+  color:#fff;
+  font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(11,15,20,.85);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+.navbar-inner{
+  max-width:1200px;
+  margin:auto;
+  padding:14px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  margin-left:14px;
+  padding:6px 16px;
+  border-radius:999px;
+}
+.nav-links a.active{
+  background:linear-gradient(135deg,#7dd3fc66,#a78bfa66);
+  box-shadow:0 0 18px rgba(125,211,252,.7);
+  font-weight:700;
+}
+
+/* TITLE */
+header{
+  text-align:center;
+  padding:40px 20px 20px;
+}
+header h1{
+  margin:0;
+  font-size:34px;
+}
+
+/* GRID */
+.grid{
+  max-width:1200px;
+  margin:0 auto 80px;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:30px;
+}
+
+/* TEAM CARD */
+.team{
+  background:#0f0f0f;
+  border-radius:22px;
+  padding:16px;
+  box-shadow:0 0 40px rgba(0,0,0,.8);
+}
+
+/* HEADER */
+.team-title{
+  padding:14px;
+  border-radius:16px;
+  font-weight:900;
+  font-size:20px;
+  text-align:center;
+  margin-bottom:10px;
+}
+
+/* COLORS */
+.noord{background:linear-gradient(90deg,#00e5ff,#007bff);}
+.oost{background:linear-gradient(90deg,#6f3cff,#4b2bff);}
+.zuid{background:linear-gradient(90deg,#ff2b2b,#b30000);}
+.west{background:linear-gradient(90deg,#ffd400,#ff9f00);color:#111;}
+
+/* COUNT */
+.team-count{
+  text-align:center;
+  opacity:.8;
+  margin-bottom:14px;
+  font-weight:600;
+}
+
+/* PLAYERS */
+.players{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+.player{
+  background:#151515;
+  padding:10px;
+  border-radius:12px;
+  text-align:center;
+  font-weight:700;
+  font-size:14px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+/* MOBILE */
+@media(max-width:520px){
+  .players{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="navbar">
+  <div class="navbar-inner">
+    <strong>NCSMP</strong>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="gebieden.html" class="active">Gebieden</a>
+      <a href="regels.html">Regels</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <h1>🗺️ NCSMP Teamverdeling</h1>
+</header>
+
+<div class="grid">
+
+<!-- NOORD -->
+<div class="team">
+  <div class="team-title noord">❄️ NOORD</div>
+  <div class="team-count">89 spelers</div>
+  <div class="players">
+    <div class="player">Discordkoek</div>
+    <div class="player">xTheDutchKingx</div>
+    <div class="player">Dilling10</div>
+    <div class="player">W0HE</div>
+    <div class="player">bileter1618</div>
+    <div class="player">sennekraft27</div>
+    <div class="player">Gan538</div>
+    <div class="player">Aldie_</div>
+    <div class="player">ItssPepie</div>
+    <div class="player">anoniem11</div>
+    <div class="player">BrumNL</div>
+    <div class="player">Peejootus</div>
+    <div class="player">pim_vm</div>
+    <div class="player">DuckyDuk205</div>
+    <div class="player">Piele</div>
+    <div class="player">Itssmettie</div>
+    <div class="player">FosRoo14</div>
+    <div class="player">Pimoriginal24</div>
+    <div class="player">LW_Luc</div>
+    <div class="player">doctercoconut</div>
+    <div class="player">Odsko</div>
+    <div class="player">Loekstuff</div>
+    <div class="player">flowzy0</div>
+    <div class="player">Maxgamer1348</div>
+    <div class="player">Trxpzxz</div>
+    <div class="player">MeneerSandwich</div>
+    <div class="player">Bart024</div>
+    <div class="player">U20</div>
+    <div class="player">Tasjeeuh</div>
+    <div class="player">Niek_s</div>
+    <div class="player">Fierylotus89157</div>
+    <div class="player">Roankje</div>
+    <div class="player">Kuifje1</div>
+    <div class="player">Klyor</div>
+    <div class="player">XXchocopopje</div>
+    <div class="player">Wesleytje2</div>
+    <div class="player">Blakapool</div>
+    <div class="player">ItsJoshua_</div>
+    <div class="player">koen2511</div>
+    <div class="player">DwizzyYT</div>
+    <div class="player">Boxedbyfinn3894</div>
+    <div class="player">StijnMarsepijn</div>
+    <div class="player">Osssi2008</div>
+    <div class="player">brummetjebaas</div>
+    <div class="player">MoosjeTW</div>
+    <div class="player">Niekie3202</div>
+    <div class="player">Jantinski</div>
+    <div class="player">BramBaasie</div>
+    <div class="player">Slakkieeee</div>
+    <div class="player">befn</div>
+    <div class="player">steyn23k</div>
+    <div class="player">Guusmetzwagg</div>
+    <div class="player">IIDallieII</div>
+    <div class="player">qlewiedeQD.</div>
+    <div class="player">Viaticgolf92032</div>
+    <div class="player">bananenjoch</div>
+    <div class="player">PIGIONNN</div>
+    <div class="player">nootici</div>
+    <div class="player">Knory</div>
+    <div class="player">MrTiman_</div>
+    <div class="player">Borisior2</div>
+    <div class="player">Jochemvd09</div>
+    <div class="player">Jayk15</div>
+    <div class="player">DoekMC</div>
+    <div class="player">jxro512</div>
+    <div class="player">Sylvestre2012</div>
+    <div class="player">skoebidoemannen</div>
+    <div class="player">Brolyzab</div>
+    <div class="player">Lolplayer2010</div>
+    <div class="player">Redpunda</div>
+    <div class="player">Jannes64</div>
+    <div class="player">Yi3A</div>
+    <div class="player">Mr_pronghorn</div>
+    <div class="player">Zenderlink</div>
+    <div class="player">Wout567</div>
+    <div class="player">xSamsung</div>
+    <div class="player">TijsTiesto</div>
+    <div class="player">Z70S</div>
+    <div class="player">Itzsmikkelbeert</div>
+    <div class="player">nixEVE</div>
+    <div class="player">.Black_skully160</div>
+    <div class="player">Stef123123</div>
+    <div class="player">tobytboy</div>
+    <div class="player">Koekiemaster2</div>
+    <div class="player">wlevi1409</div>
+    <div class="player">Winegum2</div>
+    <div class="player">Fappelflap</div>
+    <div class="player">Vlaaienbakker123</div>
+    <div class="player">R4ZUX</div>
+  </div>
+</div>
+
+
+<!-- OOST -->
+<div class="team">
+  <div class="team-title oost">🌲 OOST</div>
+  <div class="team-count">89 spelers</div>
+  <div class="players">
+    <div class="player">Feddanusbeton</div>
+    <div class="player">xF0urty0ne_</div>
+    <div class="player">Cheese159</div>
+    <div class="player">S1EM</div>
+    <div class="player">Klevinn</div>
+    <div class="player">Jooopie6242</div>
+    <div class="player">Ik ben Bollo</div>
+    <div class="player">Jeevan032</div>
+    <div class="player">Flxzzy12</div>
+    <div class="player">Ikzoujaridoen</div>
+    <div class="player">Flopietje</div>
+    <div class="player">DrDani67</div>
+    <div class="player">Daquaviusde3de</div>
+    <div class="player">Haantje2494</div>
+    <div class="player">jarno04x</div>
+    <div class="player">Oz_Gaming</div>
+    <div class="player">luckyducky1289</div>
+    <div class="player">Duif17k</div>
+    <div class="player">pastagedrag</div>
+    <div class="player">Kijkje</div>
+    <div class="player">luciqno071</div>
+    <div class="player">MatsGog04</div>
+    <div class="player">Pizzavuurbal</div>
+    <div class="player">Roncallie2010</div>
+    <div class="player">ThijsNow</div>
+    <div class="player">Jarnogfc</div>
+    <div class="player">JelleVH6688</div>
+    <div class="player">G3org3_Fl0y6</div>
+    <div class="player">Gewoon_Mick053</div>
+    <div class="player">HalloCasandra</div>
+    <div class="player">Maikvdvliet</div>
+    <div class="player">Crypsius</div>
+    <div class="player">nickvdkgaming</div>
+    <div class="player">MisterAsmodeus</div>
+    <div class="player">Guusjegame</div>
+    <div class="player">Resperationn</div>
+    <div class="player">Mistersaff</div>
+    <div class="player">glennP10</div>
+    <div class="player">Moesjquito</div>
+    <div class="player">Oliver_tha_goath</div>
+    <div class="player">Boeboekaasjes</div>
+    <div class="player">Looptindeweg</div>
+    <div class="player">Jasmina69</div>
+    <div class="player">TonedCupid</div>
+    <div class="player">bloemkat</div>
+    <div class="player">.redvox4808</div>
+    <div class="player">nThijn06</div>
+    <div class="player">mathi1212</div>
+    <div class="player">Daloho</div>
+    <div class="player">Golden m4853</div>
+    <div class="player">WellHelloThere03</div>
+    <div class="player">WizenSteam6006</div>
+    <div class="player">nielstac</div>
+    <div class="player">Cen1th_</div>
+    <div class="player">Notmaayke</div>
+    <div class="player">_pink_punda_</div>
+    <div class="player">Broodje_jam</div>
+    <div class="player">Sjoeks_</div>
+    <div class="player">Magle1407</div>
+    <div class="player">Noootjee</div>
+    <div class="player">AnneWannn</div>
+    <div class="player">JensTilburg013</div>
+    <div class="player">Statz um grr</div>
+    <div class="player">MusicalgamerNA</div>
+    <div class="player">SavageVPN</div>
+    <div class="player">Thxbeau67</div>
+    <div class="player">JOSJAN1</div>
+    <div class="player">Nickstrijboss</div>
+    <div class="player">Trekhaak_</div>
+    <div class="player">Raptormane</div>
+    <div class="player">Zalig</div>
+    <div class="player">Pikachuthepika</div>
+    <div class="player">justmike_nl</div>
+    <div class="player">KeyanMiner</div>
+    <div class="player">__Christiaan__</div>
+    <div class="player">Bumblebee1309</div>
+    <div class="player">hidde67</div>
+    <div class="player">Mrpanda4009</div>
+    <div class="player">NateFat</div>
+    <div class="player">AKIP4444</div>
+    <div class="player">Pho_low</div>
+    <div class="player">Somebody36834</div>
+    <div class="player">Fabiboy8077</div>
+    <div class="player">pokemines</div>
+    <div class="player">jens_04133</div>
+    <div class="player">BroodjeLag</div>
+    <div class="player">Jupia</div>
+    <div class="player">Appelsap013</div>
+    <div class="player">Zootje</div>
+  </div>
+</div>
+
+
+<!-- ZUID -->
+<div class="team">
+  <div class="team-title zuid">🌋 ZUID</div>
+  <div class="team-count">88 spelers</div>
+  <div class="players">
+    <div class="player">feiko_mc</div>
+    <div class="player">yeppe33</div>
+    <div class="player">FakePoet4407208</div>
+    <div class="player">Gio_SaplimgX</div>
+    <div class="player">JoranvRos</div>
+    <div class="player">Limitzaka</div>
+    <div class="player">CuteGamerboy22</div>
+    <div class="player">pimesgonzales</div>
+    <div class="player">_MrAppel_</div>
+    <div class="player">nowah_05</div>
+    <div class="player">VexedPopcorn</div>
+    <div class="player">Smokylight5366</div>
+    <div class="player">Tygo Maxi</div>
+    <div class="player">Dwergenkoning_</div>
+    <div class="player">WargamerMatthew</div>
+    <div class="player">Wickedwiekyt</div>
+    <div class="player">TJPLAYSGAMES_</div>
+    <div class="player">zwxy030</div>
+    <div class="player">Enzonabnab</div>
+    <div class="player">mero9927511</div>
+    <div class="player">.gerda29</div>
+    <div class="player">_IsThatASkyline_</div>
+    <div class="player">wierd05</div>
+    <div class="player">FietsSleutel8</div>
+    <div class="player">GamerThomax</div>
+    <div class="player">LeroyP007</div>
+    <div class="player">Stinkkaas321</div>
+    <div class="player">Bigdyinyan</div>
+    <div class="player">maxvanoost</div>
+    <div class="player">NoTextureError</div>
+    <div class="player">.guidedant382319</div>
+    <div class="player">TigerMikey</div>
+    <div class="player">sidewalked</div>
+    <div class="player">Balletjerijst</div>
+    <div class="player">Frikadelbroodje</div>
+    <div class="player">sirkoroshi</div>
+    <div class="player">Patron0413</div>
+    <div class="player">D1AdoGlazer</div>
+    <div class="player">AmissStew816186</div>
+    <div class="player">Koekiemaster3</div>
+    <div class="player">V0lpe__</div>
+    <div class="player">Bliksem_tijn</div>
+    <div class="player">zNixls_</div>
+    <div class="player">Zipperedaura7</div>
+    <div class="player">UnrealDiffy</div>
+    <div class="player">Teunk</div>
+    <div class="player">cleped</div>
+    <div class="player">Bornumus247</div>
+    <div class="player">Neblo09</div>
+    <div class="player">Levi24lh444</div>
+    <div class="player">Kaasvandaal2000</div>
+    <div class="player">PretaxFan778443</div>
+    <div class="player">_Qwoke_</div>
+    <div class="player">keremthehun</div>
+    <div class="player">Ownedbyjari</div>
+    <div class="player">RH15XDEBBIE</div>
+    <div class="player">Quintini</div>
+    <div class="player">Maxfynnwaning</div>
+    <div class="player">NikaiChamp</div>
+    <div class="player">Sjarno</div>
+    <div class="player">Azcwegermee67</div>
+    <div class="player">Jamanbro2716</div>
+    <div class="player">TostiTV</div>
+    <div class="player">Robert1308</div>
+    <div class="player">Penpijn</div>
+    <div class="player">ContenDel</div>
+    <div class="player">JiglyPuff8190</div>
+    <div class="player">Koning Bitterbal</div>
+    <div class="player">The big oj</div>
+    <div class="player">Biellie</div>
+    <div class="player">Volgartd</div>
+    <div class="player">GIJSIE_1</div>
+    <div class="player">Matmonn</div>
+    <div class="player">BrandonDW</div>
+    <div class="player">DeEchteStoeprand</div>
+    <div class="player">Wessel_H</div>
+    <div class="player">ItzSushi_</div>
+    <div class="player">Oneervol</div>
+    <div class="player">Hetekip_</div>
+    <div class="player">NoLimitRuben_</div>
+    <div class="player">Romano33e</div>
+    <div class="player">CraftyJayden</div>
+    <div class="player">yiinxc</div>
+    <div class="player">Samkickboxer</div>
+    <div class="player">Juicd_</div>
+    <div class="player">Witchypurse</div>
+    <div class="player">aytr1s</div>
+    <div class="player">HideOnBushh__</div>
+  </div>
+</div>
+
+
+<!-- WEST -->
+<div class="team">
+  <div class="team-title west">🏜️ WEST</div>
+  <div class="team-count">88 spelers</div>
+  <div class="players">
+    <div class="player">RonJans6495</div>
+    <div class="player">ilysnow</div>
+    <div class="player">Cpvp_Mootje</div>
+    <div class="player">Avyxian</div>
+    <div class="player">ItssAyden</div>
+    <div class="player">Shaykuhh</div>
+    <div class="player">nathanspdie</div>
+    <div class="player">Kupido_</div>
+    <div class="player">Moonfvv</div>
+    <div class="player">yoboudy</div>
+    <div class="player">Bananaskin2013</div>
+    <div class="player">KaputPanda2006</div>
+    <div class="player">Gio20101010</div>
+    <div class="player">Nightanto</div>
+    <div class="player">BroodCorstiaan</div>
+    <div class="player">Oliwalaby2013</div>
+    <div class="player">NatteRat</div>
+    <div class="player">.Trok1497884</div>
+    <div class="player">justvestidos</div>
+    <div class="player">Basthebuilder1</div>
+    <div class="player">MR_monkeboy</div>
+    <div class="player">MrPlukkie</div>
+    <div class="player">stanofso</div>
+    <div class="player">ArcanePuffs</div>
+    <div class="player">Stannem</div>
+    <div class="player">Leonekuh12</div>
+    <div class="player">daniel003l</div>
+    <div class="player">Thatonegamingguy</div>
+    <div class="player">TwoAsp835108554</div>
+    <div class="player">DDW2010</div>
+    <div class="player">snotkaas</div>
+    <div class="player">cerosozo</div>
+    <div class="player">ClasherMike</div>
+    <div class="player">Ianhunterboy</div>
+    <div class="player">Kjell22</div>
+    <div class="player">Lady_Beauty</div>
+    <div class="player">LetSplash494864</div>
+    <div class="player">Ambur.024</div>
+    <div class="player">09han09</div>
+    <div class="player">zwartepiet026</div>
+    <div class="player">Cemie_boy21</div>
+    <div class="player">laag_lager</div>
+    <div class="player">Raldy2406</div>
+    <div class="player">Brentimotje</div>
+    <div class="player">Sleepfaster</div>
+    <div class="player">ReportRens</div>
+    <div class="player">ImDazzy_</div>
+    <div class="player">finnvgame</div>
+    <div class="player">ChubbyP</div>
+    <div class="player">Mijn_pik_ex</div>
+    <div class="player">MrAnoniem</div>
+    <div class="player">J_U_U_L</div>
+    <div class="player">GeitjeOfz</div>
+    <div class="player">aztexx</div>
+    <div class="player">P0pc0rnxxx</div>
+    <div class="player">Mootjepoeder</div>
+    <div class="player">Sjaan09</div>
+    <div class="player">Adoggod24</div>
+    <div class="player">BDP09</div>
+    <div class="player">raffelini</div>
+    <div class="player">Schoenmaatje</div>
+    <div class="player">9051Bram</div>
+    <div class="player">DaanPower16</div>
+    <div class="player">ViridianCrane27</div>
+    <div class="player">Bubbelpoint</div>
+    <div class="player">Diedaa_</div>
+    <div class="player">.Kwak_yoren</div>
+    <div class="player">.glompie1232</div>
+    <div class="player">AlertStone4816</div>
+    <div class="player">AF_ToTheMax</div>
+    <div class="player">Bollie650</div>
+    <div class="player">Lorenzzoo_</div>
+    <div class="player">rubinhoajax</div>
+    <div class="player">TheStatlers1</div>
+    <div class="player">IXD</div>
+    <div class="player">YoshiOP_</div>
+    <div class="player">EpicJimi</div>
+    <div class="player">gaminglolmatrix1</div>
+    <div class="player">Dokterhurtalot</div>
+    <div class="player">Willpowet</div>
+    <div class="player">itsdario008</div>
+    <div class="player">hikati</div>
+    <div class="player">NolanZz_</div>
+    <div class="player">DutchGamerNL1905</div>
+    <div class="player">MafkeeznPoestma</div>
+    <div class="player">bopsie</div>
+    <div class="player">applejuice035</div>
+    <div class="player">Binnenlander</div>
+  </div>
+</div>
+
+
+</div>
+
+</body>
+</html>

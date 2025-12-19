@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NCSMP – Regels</title>
+<title>NCSMP – Serverregels</title>
 
 <style>
 body{
@@ -33,26 +33,23 @@ body{
 .nav-links a{
   color:white;
   text-decoration:none;
-  margin-left:16px;
-  padding:6px 14px;
+  margin-left:14px;
+  padding:6px 16px;
   border-radius:999px;
 }
 .nav-links a.active{
   background:linear-gradient(135deg,#7dd3fc66,#a78bfa66);
-  box-shadow:0 0 15px rgba(125,211,252,.6);
+  box-shadow:0 0 16px rgba(125,211,252,.7);
   font-weight:700;
 }
 
 /* CONTENT */
 .wrapper{
   max-width:1100px;
-  margin:40px auto;
+  margin:40px auto 80px;
   padding:0 20px;
 }
-h1{
-  text-align:center;
-  margin-bottom:40px;
-}
+h1{text-align:center;margin-bottom:40px}
 
 /* ACCORDION */
 .rule{margin-bottom:18px}
@@ -66,32 +63,24 @@ h1{
   padding:16px 20px;
   cursor:pointer;
 }
-.rule-title{
-  font-size:20px;
-  font-weight:900;
-}
-.chevron{
-  margin-left:auto;
-  transition:.3s;
-}
+.rule-title{font-size:20px;font-weight:900}
+.chevron{margin-left:auto;transition:.3s}
 .rule-content{
   max-height:0;
   overflow:hidden;
-  transition:max-height .35s ease;
+  transition:max-height .4s ease;
   background:rgba(0,0,0,.35);
   border:1px solid rgba(255,255,255,.15);
   border-top:none;
   border-radius:0 0 18px 18px;
 }
-.rule-content-inner{
-  padding:18px 22px;
-}
+.rule-content-inner{padding:20px 24px}
 .rule.open .rule-content{max-height:12000px}
 .rule.open .chevron{transform:rotate(180deg)}
-
 ul{margin:0;padding-left:18px}
 li{margin:10px 0;line-height:1.65}
-p{line-height:1.7;margin:0}
+p{line-height:1.7;color:#ddd}
+strong{color:#fff}
 </style>
 </head>
 
@@ -121,277 +110,212 @@ p{line-height:1.7;margin:0}
   <div class="rule-content">
     <div class="rule-content-inner">
       <p>
-        <strong>NCSMP – Serverregels</strong><br><br>
-        Door deel te nemen aan NCSMP ga je akkoord met <strong>alle onderstaande regels</strong>.<br>
-        Deze regels zijn van toepassing op <strong>alle gameplay, communicatie en interacties</strong> binnen de server.<br><br>
-        Het niet kennen van de regels ontslaat je <strong>niet</strong> van verantwoordelijkheid.<br>
-        Van iedere speler wordt verwacht dat hij of zij deze regels doorleest en naleeft.
+        Door te spelen op <strong>NCSMP</strong> ga je akkoord met <strong>alle onderstaande regels</strong>.<br>
+        Onwetendheid is <strong>geen excuus</strong>.<br><br>
+        Deze regels zijn bedoeld om de gameplay, lore en community eerlijk,
+        spannend en respectvol te houden voor iedereen.
       </p>
     </div>
   </div>
 </div>
 
-<!-- 1 ALGEMEEN -->
+<!-- 1 ALGEMENE REGELS -->
 <div class="rule">
-<div class="rule-header">
-  <div class="rule-title">📌 1. Algemene Regels</div>
-  <div class="chevron">⌄</div>
-</div>
-<div class="rule-content">
-<div class="rule-content-inner">
+<div class="rule-header"><div class="rule-title">📌 1. Algemene Regels</div><div class="chevron">⌄</div></div>
+<div class="rule-content"><div class="rule-content-inner">
 <ul>
-<li><strong>Wees respectvol naar iedereen.</strong><br>
-Beledigingen, toxiciteit, racisme, discriminatie, haatdragende uitingen of het aanzetten tot haat zijn niet toegestaan.
-Dit geldt voor chat, voice, namen, skins, builds en elk ander middel.</li>
-
-<li><strong>Geen spam of storend gedrag.</strong><br>
-Dit omvat chatspam, advertentie-spam, earrape, soundboard-spam, herhaald pingen,
-microfoonmisbruik, het expres storen van gesprekken of gameplay en command-spam.</li>
-
-<li><strong>Gebruik gezond verstand.</strong><br>
-Twijfel je? Vraag eerst staff.</li>
-
-<li><strong>Volg aanwijzingen van staff op.</strong><br>
-Publiekelijk discussiëren of staff tegenwerken is niet toegestaan.</li>
-
-<li><strong>Geen exploits of cheats.</strong><br>
-Bugs, glitches, hacks, macros of ongeoorloofde hulpmiddelen zijn verboden.</li>
-
-<li><strong>Geen impersonatie.</strong></li>
-
-<li><strong>Houd communicatie passend.</strong></li>
-
-<li><strong>Respecteer privacy.</strong></li>
-
-<li><strong>Geen drama of provocatie.</strong></li>
-
-<li><strong>Staff kan optreden naar eigen inzicht.</strong></li>
-
-<li><strong>Sancties.</strong><br>
-Waarschuwingen, mutes, kicks, tijdelijke of permanente bans.</li>
+<li><strong>Wees respectvol naar iedereen.</strong> Beledigingen, toxiciteit, racisme, discriminatie, haatdragende uitingen of het aanzetten tot haat zijn niet toegestaan. Dit geldt voor chat, voice, namen, skins, builds en elk ander middel.</li>
+<li><strong>Geen spam of storend gedrag.</strong> Dit omvat (maar is niet beperkt tot) chatspam, advertentie-spam, earrape, soundboard-spam, herhaald pingen, microfoonmisbruik, het expres storen van gesprekken of gameplay, en het misbruiken van commando’s.</li>
+<li><strong>Gebruik gezond verstand.</strong> Gedraag je volwassen en sportief. Als je twijfelt of iets mag, vraag het eerst aan staff voordat je handelt.</li>
+<li><strong>Volg aanwijzingen van staff op.</strong> Staff heeft altijd het laatste woord. Het negeren, tegenwerken of publiekelijk in discussie gaan met staffbeslissingen is niet toegestaan. Bezwaar? Maak dit rustig en privé bespreekbaar.</li>
+<li><strong>Geen exploits of cheats.</strong> Het misbruiken van bugs, glitches, exploits, hacks, macros of ongeoorloofde hulpmiddelen is verboden. Meld bugs bij staff.</li>
+<li><strong>Geen impersonatie.</strong> Doe je niet voor als staff, content creators of andere spelers. Misleidende namen, skins of gedrag vallen hier ook onder.</li>
+<li><strong>Houd communicatie passend.</strong> NSFW-inhoud, extreme taal, schokkende beelden of expliciete discussies zijn niet toegestaan.</li>
+<li><strong>Respecteer privacy.</strong> Het delen van persoonlijke informatie (doxxing), screenshots, DM’s of voice-opnames zonder toestemming is verboden.</li>
+<li><strong>Geen provocatie of drama.</strong> Het uitlokken van ruzies, witch-hunts, massareports of het verspreiden van geruchten is niet toegestaan.</li>
+<li><strong>Staff kan optreden naar eigen inzicht.</strong> Regels zijn niet uitputtend.</li>
+<li><strong>Sancties.</strong> Overtredingen kunnen leiden tot waarschuwingen, mutes, kicks, tijdelijke of permanente bans.</li>
 </ul>
-</div>
-</div>
+</div></div>
 </div>
 
 <!-- 2 GAMEPLAY -->
 <div class="rule">
-<div class="rule-header">
-  <div class="rule-title">📌 2. Gameplay Regels</div>
-  <div class="chevron">⌄</div>
-</div>
-<div class="rule-content">
-<div class="rule-content-inner">
+<div class="rule-header"><div class="rule-title">📌 2. Gameplay Regels</div><div class="chevron">⌄</div></div>
+<div class="rule-content"><div class="rule-content-inner">
 <ul>
-<li>Speel eerlijk – cheats, hacks, dupes = verboden.</li>
-<li>Geen griefing, trolling, spawnkillen of targeten.</li>
+<li>Speel eerlijk – cheats, hacks, dupes of ongeoorloofde hulpmiddelen zijn verboden.</li>
+<li>Geen bug- of exploitmisbruik. Bugs ≠ toestemming.</li>
+<li>Geen griefing, trolling, spawnkillen, campen of targeten.</li>
 <li>Geen combat logging, metagaming of streamsniping.</li>
-<li>Geen AFK-misbruik.</li>
-<li>Exploits of bugs misbruiken = verboden.</li>
+<li>Geen AFK-misbruik of passief voordeel.</li>
 <li>Events & staff-instructies zijn leidend.</li>
-<li>Bugs ≠ toestemming.</li>
 <li>Staff beslist bij twijfel.</li>
 </ul>
-</div>
-</div>
+</div></div>
 </div>
 
 <!-- 3 MODPACK -->
 <div class="rule">
-<div class="rule-header">
-  <div class="rule-title">📌 3. Modpack & Fair Play</div>
-  <div class="chevron">⌄</div>
-</div>
-<div class="rule-content">
-<div class="rule-content-inner">
+<div class="rule-header"><div class="rule-title">📌 3. Modpack & Fair Play</div><div class="chevron">⌄</div></div>
+<div class="rule-content"><div class="rule-content-inner">
 <ul>
-<li>Officieel modpack is verplicht.</li>
-<li>X-ray, ESP, freecam, autoclickers, kill-aura = verboden.</li>
-<li>Minimap cave-mode & entity-mode verboden.</li>
-<li>Minimap mag alleen surface tonen.</li>
-<li>Performance mods toegestaan zonder voordeel.</li>
-<li>Macro’s & scripts verboden.</li>
-<li>Alt-accounts voor voordeel verboden.</li>
+<li>Gebruik alleen toegestane mods.</li>
+<li>X-ray, ESP, freecam, auto-clickers, kill-aura of vergelijkbare tools zijn verboden.</li>
+<li>Minimap cave-mode en entity/radar-mode zijn verboden.</li>
+<li>Minimap mag alleen surface/terrain tonen.</li>
+<li>Health bars, see-through shaders of client-manipulatie zijn verboden.</li>
+<li>Macro’s, scripts en alt-accounts voor voordeel zijn verboden.</li>
 <li>Staff mag bewijs opvragen.</li>
+<li>Staff beslist altijd.</li>
 </ul>
-</div>
-</div>
+</div></div>
 </div>
 
 <!-- 4 METAGAMING -->
 <div class="rule">
-<div class="rule-header">
-  <div class="rule-title">📌 4. Metagaming</div>
-  <div class="chevron">⌄</div>
-</div>
-<div class="rule-content">
-<div class="rule-content-inner">
+<div class="rule-header"><div class="rule-title">📌 4. Metagaming</div><div class="chevron">⌄</div></div>
+<div class="rule-content"><div class="rule-content-inner">
 <ul>
 <li>Geen OOC-informatie gebruiken in-game.</li>
-<li>Streamsnipen verboden.</li>
-<li>Externe voice voor voordeel verboden.</li>
+<li>Streamsnipen is verboden.</li>
+<li>Externe voice voor tactisch voordeel is verboden.</li>
 <li>Indirecte metagaming telt ook.</li>
-<li>Staff beoordeelt context.</li>
+<li>Staff beoordeelt context en intentie.</li>
 </ul>
-</div>
-</div>
+</div></div>
 </div>
 
-<!-- 5 BOUW & TRAPS -->
+<!-- 5 BOUW -->
 <div class="rule">
-<div class="rule-header">
-  <div class="rule-title">📌 5. Bouw Regels & Traps</div>
-  <div class="chevron">⌄</div>
-</div>
-<div class="rule-content">
-<div class="rule-content-inner">
+<div class="rule-header"><div class="rule-title">📌 5. Bouw Regels & Traps</div><div class="chevron">⌄</div></div>
+<div class="rule-content"><div class="rule-content-inner">
 <ul>
-<li>Litematica verboden.</li>
+<li>Litematica en vergelijkbare tools zijn verboden.</li>
 <li>Geen offline traps.</li>
-<li>Base traps alleen als eigenaar online is.</li>
-<li>Max 12 TNT minecarts per trap.</li>
+<li>Base traps alleen als eigenaar online is + geldige reden.</li>
+<li>Maximaal 12 TNT-minecarts per trap.</li>
 <li>Alleen interaction traps toegestaan.</li>
 <li>Geen sculk sensor of entity cramming traps.</li>
 <li>Geen insta-kill traps.</li>
-<li>Staff beslist.</li>
+<li>Staff beoordeelt.</li>
 </ul>
-</div>
-</div>
+</div></div>
 </div>
 
 <!-- 6 IJSMUUR -->
 <div class="rule">
-<div class="rule-header">
-  <div class="rule-title">📌 6. IJsmuur</div>
-  <div class="chevron">⌄</div>
-</div>
-<div class="rule-content">
-<div class="rule-content-inner">
+<div class="rule-header"><div class="rule-title">📌 6. IJsmuur</div><div class="chevron">⌄</div></div>
+<div class="rule-content"><div class="rule-content-inner">
 <ul>
-<li>IJsmuur niet glitch’en of exploiten.</li>
+<li>IJsmuur niet glitch’en, exploiten of omzeilen.</li>
 <li>Voor de smelt: niet claimen of bouwen.</li>
 <li>Na de smelt: bouwen toegestaan.</li>
 <li>Alleen staff mag vóór de smelt aanpassen.</li>
+<li>Misbruik = sancties.</li>
 </ul>
-</div>
-</div>
+</div></div>
 </div>
 
 <!-- 7 LOST SHORES -->
 <div class="rule">
-<div class="rule-header">
-  <div class="rule-title">📌 7. The Lost Shores</div>
-  <div class="chevron">⌄</div>
-</div>
-<div class="rule-content">
-<div class="rule-content-inner">
+<div class="rule-header"><div class="rule-title">📌 7. The Lost Shores</div><div class="chevron">⌄</div></div>
+<div class="rule-content"><div class="rule-content-inner">
 <ul>
-<li>Zelfde regels als normale SMP.</li>
+<li>Zelfde regels als de normale SMP.</li>
 <li>Geen End of Nether.</li>
 <li>Geen uitzonderingen.</li>
 <li>Staff beslist.</li>
 </ul>
-</div>
-</div>
+</div></div>
 </div>
 
-<!-- 8 ITEMS -->
+<!-- 8 ITEM CAPS -->
 <div class="rule">
-<div class="rule-header">
-  <div class="rule-title">📌 8. Item Caps & Verboden Items</div>
-  <div class="chevron">⌄</div>
-</div>
-<div class="rule-content">
-<div class="rule-content-inner">
+<div class="rule-header"><div class="rule-title">📌 8. Item Caps & Verboden Items</div><div class="chevron">⌄</div></div>
+<div class="rule-content"><div class="rule-content-inner">
 <ul>
 <li>Ender Pearls: max 3 stacks</li>
 <li>Golden Apples: max 32</li>
 <li>Cobwebs: max 64</li>
-<li>Totems: max 1</li>
+<li>Totems of Undying: max 1</li>
 <li>Enchanted Golden Apples: max 4</li>
 <li>Potions: geen limiet</li>
-<li>Verboden: End Crystals, Elytra, Respawn Anchors, Tridents</li>
+<li><strong>Verboden:</strong> End Crystals, Elytra, Respawn Anchors, Tridents</li>
+<li>Staff mag items verwijderen.</li>
 </ul>
-</div>
-</div>
+</div></div>
 </div>
 
-<!-- 9 FARMS -->
+<!-- 9 BASES -->
 <div class="rule">
-<div class="rule-header">
-  <div class="rule-title">📌 9. Farms & Redstone</div>
-  <div class="chevron">⌄</div>
-</div>
-<div class="rule-content">
-<div class="rule-content-inner">
+<div class="rule-header"><div class="rule-title">📌 9. Bases, Bordjes & Griefing</div><div class="chevron">⌄</div></div>
+<div class="rule-content"><div class="rule-content-inner">
 <ul>
-<li>Normale farms toegestaan.</li>
-<li>Raid farms & pillager farms verboden.</li>
-<li>Geen AFK-farms.</li>
-<li>Geen lagmachines.</li>
-<li>Geen exploit- of glitchfarms.</li>
-<li>Entity-limieten gelden.</li>
-<li>Automatisering met mate.</li>
-<li>Staff mag farms verwijderen.</li>
-<li>Geen refunds.</li>
+<li>Bordje “Base – Naam” = bescherming.</li>
+<li>Geen bordje = griefing toegestaan.</li>
+<li>Bordjes moeten zichtbaar en leesbaar zijn.</li>
+<li>Staff beslist bij conflicten.</li>
 </ul>
-</div>
-</div>
+</div></div>
 </div>
 
 <!-- 10 COMBAT -->
 <div class="rule">
-<div class="rule-header">
-  <div class="rule-title">📌 10. Combat Logging</div>
-  <div class="chevron">⌄</div>
-</div>
-<div class="rule-content">
-<div class="rule-content-inner">
+<div class="rule-header"><div class="rule-title">📌 10. Combat Logging</div><div class="chevron">⌄</div></div>
+<div class="rule-content"><div class="rule-content-inner">
 <ul>
-<li>Combat logging verboden.</li>
+<li>Combat logging is verboden.</li>
 <li>Disconnecten om PvP te vermijden is strafbaar.</li>
-<li>Crashes worden beoordeeld.</li>
+<li>Crashes worden per situatie beoordeeld.</li>
+<li>Sancties mogelijk.</li>
 <li>Staff beslist.</li>
 </ul>
-</div>
-</div>
+</div></div>
 </div>
 
 <!-- 11 LORE -->
 <div class="rule">
-<div class="rule-header">
-  <div class="rule-title">📌 11. Lore, Roleplay & PvP</div>
-  <div class="chevron">⌄</div>
-</div>
-<div class="rule-content">
-<div class="rule-content-inner">
+<div class="rule-header"><div class="rule-title">📌 11. Lore, Roleplay & PvP</div><div class="chevron">⌄</div></div>
+<div class="rule-content"><div class="rule-content-inner">
 <ul>
-<li>Lore-SMP, geen PvP-server.</li>
+<li>Dit is een lore-SMP, geen PvP-server.</li>
 <li>Geen random kills.</li>
 <li>PvP moet lore-gedreven zijn.</li>
-<li>Eén winnaar via lore.</li>
+<li>Eén winnaar via roleplay.</li>
 <li>Staff beoordeelt intentie.</li>
 </ul>
+</div></div>
 </div>
-</div>
+
+<!-- FARMS -->
+<div class="rule">
+<div class="rule-header"><div class="rule-title">📌 Farms & Redstone</div><div class="chevron">⌄</div></div>
+<div class="rule-content"><div class="rule-content-inner">
+<ul>
+<li>Normale farms zijn toegestaan.</li>
+<li>Raid- en pillager farms zijn verboden.</li>
+<li>Geen AFK-farms.</li>
+<li>Geen lagmachines.</li>
+<li>Geen exploit- of glitchfarms.</li>
+<li>Staff mag farms verwijderen.</li>
+<li>Geen refunds.</li>
+<li>Staff beslist.</li>
+</ul>
+</div></div>
 </div>
 
 <!-- SLOT -->
 <div class="rule">
-<div class="rule-header">
-  <div class="rule-title">📌 Slotregel</div>
-  <div class="chevron">⌄</div>
-</div>
-<div class="rule-content">
-<div class="rule-content-inner">
+<div class="rule-header"><div class="rule-title">📌 Slotregel</div><div class="chevron">⌄</div></div>
+<div class="rule-content"><div class="rule-content-inner">
 <ul>
 <li>Regels zijn niet uitputtend.</li>
 <li>Intentie > techniek.</li>
 <li>Regels kunnen wijzigen.</li>
 <li>Staff heeft altijd het laatste woord.</li>
 </ul>
-</div>
-</div>
+</div></div>
 </div>
 
 </div>
